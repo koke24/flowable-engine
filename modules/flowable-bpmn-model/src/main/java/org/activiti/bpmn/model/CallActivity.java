@@ -22,6 +22,7 @@ public class CallActivity extends Activity {
 
   protected String calledElement;
   protected boolean inheritVariables;
+  protected boolean inheritBusinessKey;
   protected List<IOParameter> inParameters = new ArrayList<IOParameter>();
   protected List<IOParameter> outParameters = new ArrayList<IOParameter>();
 
@@ -36,6 +37,12 @@ public class CallActivity extends Activity {
   }
   public void setInheritVariables(boolean inheritVariables) {
     this.inheritVariables = inheritVariables;
+  }
+  public boolean isInheritBusinessKey() {
+    return inheritBusinessKey;
+  }
+  public void setInheritBusinessKey(boolean inheritBusinessKey) {
+    this.inheritBusinessKey = inheritBusinessKey;
   }
   public List<IOParameter> getInParameters() {
     return inParameters;
